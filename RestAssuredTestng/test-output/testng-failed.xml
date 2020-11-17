@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Swagger Smoke Test">
+    <classes>
+      <class name="TestModels.TestPet"/>
+    </classes>
+  </test> <!-- Swagger Smoke Test -->
+  <test name="Swagger Smoke Test(failed)">
+    <classes>
+      <class name="TestModels.TestPet">
+        <methods>
+          <include name="end"/>
+          <include name="updatePet"/>
+          <include name="deletePet"/>
+          <include name="init"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- TestModels.TestPet -->
+    </classes>
+  </test> <!-- Swagger Smoke Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
